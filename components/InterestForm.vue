@@ -3,7 +3,6 @@ const name = ref("");
 const email = ref("");
 const phone = ref("");
 const origin = ref("");
-const interests = ref([]);
 
 const isLoading = ref(false);
 const isSent = ref(false);
@@ -17,7 +16,6 @@ async function contactForm() {
         email: email.value,
         phone: phone.value,
         origin: origin.value,
-        interests: interests.value
     }
   })
   isLoading.value = false;
@@ -27,7 +25,7 @@ async function contactForm() {
 
 <template>
     <div v-if="isSent" class="notification is-success">
-        <p><strong>Danke =) Wir freuen uns, dass du dich freust!</strong> Wir melden uns, sobald es etwas Neues gibt zur Nesselwang Competition &mdash; stay tuned!</p>
+        <p><strong>Danke =) Wir freuen uns, dass du dich freust!</strong> Wir melden uns, sobald es etwas Neues gibt zur Allgäu Competition &mdash; stay tuned!</p>
 
         <p class="mt-4">Bei Fragen, Ideen bzw. Anregungen: meld dich einfach jederzeit bei uns.</p>
     </div>
@@ -52,6 +50,9 @@ async function contactForm() {
                     </div>
                 </div>
 
+            </div>
+            <div class="column">
+
                 <div class="field">
                     <label class="label">Handy-Nummer *</label>
                     <div class="control">
@@ -60,30 +61,11 @@ async function contactForm() {
                     </div>
                 </div>
 
-            </div>
-            <div class="column">
-
                 <div class="field">
                     <label class="label">Herkunft *</label>
                     <div class="control">
                         <input v-model="origin" type="text" class="input" placeholder="Woher kommst du / bei welcher Organisation?"
                         required :disabled="isLoading">
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label class="label">Interesse</label>
-                    <div class="control">
-                        <label class="checkbox mr-2">
-                            <input v-model="interests" type="checkbox" value="Einzel"
-                            :disabled="isLoading">
-                            Einzel
-                        </label>
-                        <label class="checkbox">
-                            <input v-model="interests" type="checkbox" value="Staffel"
-                            :disabled="isLoading">
-                            Staffel
-                        </label>
                     </div>
                 </div>
 
