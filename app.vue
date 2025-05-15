@@ -6,7 +6,7 @@ const { event, formattedDate } = await useEvent();
 const activeModal = ref(false);
 
 useSeoMeta({
-  ogImage: "/og.jpg",
+  ogImage: "https://allgaeu-competition.vercel.app/og.jpg",
   ogTitle: event.name,
   ogDescription: event.description + " @ " + formattedDate,
 });
