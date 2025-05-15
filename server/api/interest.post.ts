@@ -3,7 +3,6 @@ interface Interest {
   email: String,
   phone: String,
   origin: String,
-  interests: String[]
 }
 
 import Airtable from "airtable";
