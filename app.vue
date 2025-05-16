@@ -161,6 +161,10 @@ useHead({
   </div>
 </template>
 
+<style>
+@import url("bulma");
+</style>
+
 <style scoped>
 .competitions span {
   display: block;
