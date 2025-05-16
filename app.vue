@@ -109,6 +109,42 @@ useHead({
 
       </div>
     </section>
+    <section class="section">
+      <div class="container">
+
+        <div class="fixed-grid has-2-cols">
+            <div class="grid">
+                <div class="cell is-row-span-2">
+                <figure class="image is-3by4">
+                    <img src="/images/bild-01.jpg" />
+                </figure>
+                </div>
+                <div class="cell">
+                <figure class="image is-4by3">
+                    <img src="/images/bild-02.jpg" />
+                </figure>
+                </div>
+                <div class="cell is-row-span-2">
+                <figure class="image is-3by4">
+                    <img src="/images/bild-04.jpg" />
+                </figure>
+                </div>
+                <div class="cell">
+                <figure class="image is-4by3">
+                    <img src="/images/bild-03.jpg" />
+                </figure>
+                </div>
+                <div class="cell is-col-span-2">
+                <figure class="image">
+                    <img src="/images/bild-05.jpg" />
+                </figure>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
 
     <footer class="footer">
       <div class="container">
